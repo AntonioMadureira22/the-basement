@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+
+import tv from './images/tv.jpg'
+import sound from './audio/static.wav'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className='tv1' src={tv} alt='tv' />
+      <div className='text'>
+        <div className='disappear'>
+          <span>T</span>
+          <span>H</span>
+          <span>E</span>
+          <span>B</span>
+          <span>A</span>
+          <span>S</span>
+          <span>E</span>
+          <span>M</span>
+          <span>E</span>
+          <span>N</span>
+          <span>T</span>
+        </div>
+      </div>
+      <div className='player'>
+      <audio controls autoPlay>
+        <source src={sound}></source>
+      </audio>
+      </div>
     </div>
+    
   );
 }
 
